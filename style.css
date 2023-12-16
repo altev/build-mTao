@@ -913,9 +913,9 @@ footer .decoration-line::before {
   left: 50%;
   transform: translate(-50%, 0);
   max-width: 1140px;
+  width: calc(100% - 40px);
   height: 2px;
   background: #E58D35;
-  width: 100%;
 }
 footer .row {
   --bs-gutter-x: 0;
@@ -1267,12 +1267,22 @@ footer a {
     order: 1;
     height: auto;
   }
-  .content-box button {
+  .content-box .btn-coop {
+    display: flex;
+    justify-content: space-between;
     order: 3;
+    width: 100%;
+    padding-right: 19px;
+  }
+  .content-box .btn-coop .icon {
+    margin: 0;
+    width: 27px;
+    height: 27px;
+    transition: 0.3s;
   }
   .information-column {
     margin: 0 auto;
-    max-width: 200px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
